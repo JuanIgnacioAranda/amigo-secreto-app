@@ -42,3 +42,13 @@ function sortearAmigo() {
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>${ganador}</li>`;
 }
+
+function reiniciarJuego() {
+    amigos = []; // vacía la lista de amigos
+
+    mostrarListaAmigos(); // limpia la lista en la pantalla
+
+    // limpia el resultado del sorteo
+    const resultado = document.getElementById("resultado");
+    resultado.innerHTML = "";
+}
